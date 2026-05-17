@@ -323,6 +323,7 @@
       align-items: center;
     }
     .funnel-label { font-size: 12.5px; color: var(--text-secondary); }
+    .funnel-cost { font-size: 11px; color: var(--text-secondary); opacity: 0.7; margin-top: 2px; }
     .funnel-bar { height: 24px; background: var(--surface3); border-radius: 8px; overflow: hidden; }
     .funnel-bar i { display: block; height: 100%; border-radius: 8px; background: linear-gradient(90deg, #7c3aed, var(--cyan)); }
     .funnel-count { font-size: 13px; font-weight: 700; color: var(--text); text-align: right; }
@@ -642,9 +643,14 @@
             <div class="funnel-count">87,461</div>
           </div>
           <div class="funnel-row">
-            <div class="funnel-label">Sightengine</div>
+            <div class="funnel-label">Sightengine Images<br><span class="funnel-cost">$0.002/call · est. $11.71 total</span></div>
             <div class="funnel-bar"><i style="width:6.7%"></i></div>
             <div class="funnel-count">5,856</div>
+          </div>
+          <div class="funnel-row">
+            <div class="funnel-label">Sightengine Video<br><span class="funnel-cost">~$0.04/scan · est. $10.36 total</span></div>
+            <div class="funnel-bar"><i style="width:0.3%"></i></div>
+            <div class="funnel-count">259</div>
           </div>
           <div class="funnel-row">
             <div class="funnel-label">Fact Check API</div>
@@ -658,10 +664,10 @@
           </div>
         </div>
         <div class="insight" style="margin-top:16px">
-          <div class="insight-icon">💡</div>
+          <div class="insight-icon">💰</div>
           <div class="insight-body">
-            <b>Add cost-per-action tracking.</b>
-            <p>Track API cost beside usage to see which flows are profitable or worth gating behind credits.</p>
+            <b>Sightengine est. total: ~$22.07</b>
+            <p>Images: $11.71 (5,856 calls × $0.002) · Video: $10.36 (259 scans × ~20 ops × $0.002). Starter plan $29/mo — Sightengine alone is using ~76% of the plan budget.</p>
           </div>
         </div>
       </div>
